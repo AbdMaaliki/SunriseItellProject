@@ -83,6 +83,9 @@ public:
 	
 	UFUNCTION()
 	bool CheckTeam(ASpaceShipCharacter* Ship1, ASpaceShipCharacter* Ship2);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void AssignMaterial();
 	
 private:
 

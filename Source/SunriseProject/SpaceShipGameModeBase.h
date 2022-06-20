@@ -29,8 +29,5 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 	float GameLength = 90.f;
 
-	UFUNCTION(Server, Reliable)
-	void Restart();
-
 	
 };

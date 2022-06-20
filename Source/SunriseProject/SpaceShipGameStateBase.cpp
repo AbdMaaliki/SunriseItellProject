@@ -33,13 +33,8 @@ void ASpaceShipGameStateBase::GetLifetimeReplicatedProps(TArray <FLifetimeProper
 
 
 void ASpaceShipGameStateBase::BeginPlay()
-{
-    AGameModeBase* GameMode = GetWorld()->GetAuthGameMode();
-	if(ASpaceShipGameModeBase* MyGameMode = Cast<ASpaceShipGameModeBase>(GameMode))
-	{
-		TimeRemaining = MyGameMode->GameLength;
-	}
-
+{   
+    CallRestart();
     FTimerHandle TimerHandle;
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ASpaceShipGameStateBase::CountDown, 1.f, bGameRunning, 0.0);
 }
@@ -48,8 +43,6 @@ void ASpaceShipGameStateBase::BeginPlay()
 void ASpaceShipGameStateBase::AddSpaceShip(ASpaceShipPlayerState* SpaceShipState)
 {
     FString NewName;
-    if(SpaceShipState)
-    
     if(SpaceShipsInGame.Num())
     {
         int32 LastIndex = SpaceShipsInGame.Num() - 1;
@@ -129,11 +122,31 @@ void ASpaceShipGameStateBase::DisplayWinner()
 
 void ASpaceShipGameStateBase::CallRestart_Implementation()
 {
-    AGameModeBase* GameMode = GetWorld()->GetAuthGameMode();
-	if(ASpaceShipGameModeBase* MyGameMode = Cast<ASpaceShipGameModeBase>(GameMode))
-	{
-		MyGameMode->Restart();
-	}
+    if(GetLocalRole() == ROLE_Authority)
+    {
+        for (ASpaceShipPlayerState* SpaceShipState : SpaceShipsInGame)
+        {
+            if(SpaceShipState)
+            {
+                SpaceShipState->ResetValues();
+                ASpaceShipCharacter* ShipCharacter = Cast<ASpaceShipCharacter>(SpaceShipState->GetPawn());
+                if(ShipCharacter)
+                {
+                    ShipCharacter->Die();
+                    ShipCharacter->AssignMaterial();
+                }
+            }
+        }
+        AGameModeBase* GameMode = GetWorld()->GetAuthGameMode();
+	    if(ASpaceShipGameModeBase* MyGameMode = Cast<ASpaceShipGameModeBase>(GameMode))
+	    {
+		    TimeRemaining = MyGameMode->GameLength;
+	    }
+        bGameRunning = true;
+        TeamsStructA.TeamKills = 0;
+        TeamsStructB.TeamKills = 0;
+        
+    }
 }
 
 void ASpaceShipGameStateBase::SetWinner(FString WinnerName)

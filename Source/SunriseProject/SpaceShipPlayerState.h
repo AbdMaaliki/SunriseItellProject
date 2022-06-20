@@ -41,5 +41,8 @@ public:
 	UFUNCTION(BlueprintPure, Category="Health")
 	FORCEINLINE FString GetTeamName() const { return TeamName; }
 
+	UFUNCTION()
+	void ResetValues();
+
 
 };

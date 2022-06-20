@@ -42,3 +42,8 @@ void ASpaceShipPlayerState::SetTeamName(FString NewTeamName)
 {
 	TeamName = NewTeamName;
 }
+
+void ASpaceShipPlayerState::ResetValues()
+{
+	PlayerKills = 0;
+}

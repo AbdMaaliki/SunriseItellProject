@@ -52,6 +52,7 @@ void ASpaceShipCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	AssignMaterial();
 	SetCurrentHealth(MaxHealth);
 	MyController = Cast<ASpaceShipPlayerController>(GetController());
 	if(MyController)

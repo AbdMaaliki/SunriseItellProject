@@ -35,7 +35,3 @@ void ASpaceShipGameModeBase::ServerRespawn(ASpaceShipPlayerController* PlayerCon
 }
 
 
-void ASpaceShipGameModeBase::Restart_Implementation()
-{
-    UGameplayStatics::OpenLevel(this, "TwinStickExampleMap");
-}

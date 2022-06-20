@@ -33,6 +33,9 @@ ASpaceShipGameStateBase();
 	FTeamStruct TeamsStructB;
 
 	UFUNCTION(BlueprintPure, Category="Kills")
+	FORCEINLINE FString GetTeamName(FTeamStruct Team) const { return Team.TeamName; }
+
+	UFUNCTION(BlueprintPure, Category="Kills")
 	FORCEINLINE int32 GetTeamBKills() const { return TeamsStructB.TeamKills; }
 
 	//Time remaining until the game ends
