@@ -25,6 +25,7 @@ ASpaceShipGameStateBase();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated)
 	FTeamStruct TeamsStructA;
 
+	//Returns team A kills
 	UFUNCTION(BlueprintPure, Category="Kills")
 	FORCEINLINE int32 GetTeamAKills() const { return TeamsStructA.TeamKills; }
 
@@ -32,11 +33,15 @@ ASpaceShipGameStateBase();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated)
 	FTeamStruct TeamsStructB;
 
+	//Returns team A kills
+	UFUNCTION(BlueprintPure, Category="Kills")
+	FORCEINLINE int32 GetTeamBKills() const { return TeamsStructB.TeamKills; }
+
+	//Returns a team's name
+	//Note: I should've done the same with kills :)
 	UFUNCTION(BlueprintPure, Category="Kills")
 	FORCEINLINE FString GetTeamName(FTeamStruct Team) const { return Team.TeamName; }
 
-	UFUNCTION(BlueprintPure, Category="Kills")
-	FORCEINLINE int32 GetTeamBKills() const { return TeamsStructB.TeamKills; }
 
 	//Time remaining until the game ends
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Replicated)//ReplicatedUsing=OnRep_TimeRemaining
@@ -52,6 +57,8 @@ ASpaceShipGameStateBase();
 	//bool to stop countdown
 	UPROPERTY(Replicated)
 	bool bGameRunning = true;
+
+	//returns bGameRunning
 	UFUNCTION(BlueprintPure)
 	FORCEINLINE bool GetGameRunning() const{return bGameRunning;};
 
@@ -77,6 +84,7 @@ ASpaceShipGameStateBase();
 	UFUNCTION(BlueprintPure)
 	FORCEINLINE FString GetWinner(){return Winner;};
 
+	//Server function to restart the game
 	UFUNCTION(Server, Reliable)
 	void CallRestart();
 
@@ -86,6 +94,7 @@ protected:
 
 private:
 
+	//String used to update win screen
 	UPROPERTY(Replicated)
 	FString Winner;
 

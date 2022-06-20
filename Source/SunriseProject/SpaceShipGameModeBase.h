@@ -17,15 +17,19 @@ class SUNRISEPROJECT_API ASpaceShipGameModeBase : public AGameModeBase
 
 public:
 
+	//Calls server function to respawn a player
+	//using their player controller
 	UFUNCTION(BlueprintCallable)
 	void CallRespawn(ASpaceShipPlayerController* PlayerController);
 
 	UFUNCTION()
 	void ServerRespawn(ASpaceShipPlayerController* PlayerController);
 
+	//Blueprint assignable class to spawn
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<class ASpaceShipCharacter> ShipToSpawnClass;
 
+	//Game length in seconds
 	UPROPERTY(EditDefaultsOnly)
 	float GameLength = 90.f;
 

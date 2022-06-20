@@ -19,6 +19,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	//Keeps track of a player number of kills
 	UPROPERTY(Replicated)
 	int32 PlayerKills = 0;
 
@@ -41,6 +42,8 @@ public:
 	UFUNCTION(BlueprintPure, Category="Health")
 	FORCEINLINE FString GetTeamName() const { return TeamName; }
 
+	//Called when game is restarted to reset 
+	//player's properties
 	UFUNCTION()
 	void ResetValues();
 
