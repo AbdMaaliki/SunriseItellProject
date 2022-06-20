@@ -1,0 +1,47 @@
+[
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProject.Build.cs",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProject.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProject.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectGameMode.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectGameMode.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectPawn.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectPawn.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectProjectile.cpp",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Dev\\\\UnrealProjects\\\\SunriseProject\\\\Source\\\\SunriseProject\\\\SunriseProjectProjectile.h",
+		"command": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe @\"C:\\Dev\\UnrealProjects\\SunriseProject\\.vscode\\compileCommands_SunriseProject\\SunriseProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	}
+]

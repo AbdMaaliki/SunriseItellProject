@@ -1,0 +1,707 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SunriseProject Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win32",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Shipping",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProject Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProject Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProject",
+				"Win64",
+				"Test",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProjectEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Debug",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProjectEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SunriseProjectEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		},
+		{
+			"label": "SunriseProjectEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"SunriseProjectEditor",
+				"Win64",
+				"Development",
+				"C:\\Dev\\UnrealProjects\\SunriseProject\\SunriseProject.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_4.27"
+			}
+		}
+	]
+}
