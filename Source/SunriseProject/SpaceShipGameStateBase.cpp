@@ -28,6 +28,7 @@ void ASpaceShipGameStateBase::GetLifetimeReplicatedProps(TArray <FLifetimeProper
     DOREPLIFETIME(ASpaceShipGameStateBase, TeamsStructB);
     DOREPLIFETIME(ASpaceShipGameStateBase, bGameRunning);
     DOREPLIFETIME(ASpaceShipGameStateBase, TimeRemaining);
+    DOREPLIFETIME(ASpaceShipGameStateBase, Winner);
 }
 
 
@@ -105,24 +106,25 @@ void ASpaceShipGameStateBase::CountDown()
     }
 }
 
-FString ASpaceShipGameStateBase::DisplayWinner()
+void ASpaceShipGameStateBase::DisplayWinner()
 {
-    FString Winner = TEXT("Draw!");
-    if(GetLocalRole() == ROLE_Authority)
-    {
+        FString WinnerName;
         APlayerController* PC = UGameplayStatics::GetPlayerController(this, 0);
         if(TeamsStructA.TeamKills > TeamsStructB.TeamKills)
         {
-            Winner = TeamsStructA.TeamName;
+            WinnerName = TeamsStructA.TeamName;
         }
         else if(TeamsStructA.TeamKills < TeamsStructB.TeamKills)
         {
-            Winner = TeamsStructB.TeamName;
+            WinnerName = TeamsStructB.TeamName;
         }
-    }
+        else
+        {
+            WinnerName = TEXT("Draw!");
+        }
+    SetWinner(WinnerName);
     FTimerHandle TimerHandle;
     GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &ASpaceShipGameStateBase::CallRestart, 5, false);
-    return Winner;
 }
 
 void ASpaceShipGameStateBase::CallRestart_Implementation()
@@ -132,6 +134,14 @@ void ASpaceShipGameStateBase::CallRestart_Implementation()
 	{
 		MyGameMode->Restart();
 	}
+}
+
+void ASpaceShipGameStateBase::SetWinner(FString WinnerName)
+{
+    if (GetLocalRole() == ROLE_Authority)
+    {
+        Winner = WinnerName;
+    }
 }
 
 

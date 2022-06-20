@@ -65,8 +65,14 @@ ASpaceShipGameStateBase();
 	void CountDown();
 
 	//function to display winner widget on all clients
+	UFUNCTION(BlueprintCallable)
+	void DisplayWinner();
+
+	UFUNCTION(BlueprintCallable)
+	void SetWinner(FString WinnerName);
+
 	UFUNCTION(BlueprintPure)
-	FString DisplayWinner();
+	FORCEINLINE FString GetWinner(){return Winner;};
 
 	UFUNCTION(Server, Reliable)
 	void CallRestart();
@@ -74,5 +80,10 @@ ASpaceShipGameStateBase();
 protected:
 
 	virtual void BeginPlay() override;
+
+private:
+
+	UPROPERTY(Replicated)
+	FString Winner;
 
 };
